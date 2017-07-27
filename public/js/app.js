@@ -1,6 +1,6 @@
 $(document).ready(function() {
    $("#target1").css("color", "red");
-   $("button").addClass("animated shake");
+  //  $("button").addClass("animated shake");
    $("#target1").css("color", "red");
    $("#target4").html("<em>#target4");
    $("#target2").appendTo("#right-well");
@@ -9,4 +9,7 @@ $(document).ready(function() {
    $("#target4").parent().css("background-color","red");
    $("#right-well").children().css("background-color","orange");
    $("#left-well").children().css("background-color","orange");
+   $(".target:nth-child(1)").addClass("animated bounce");
+   $(".target:even").addClass("animated shake");
+   $("body").addClass("animated hinge");
  });
